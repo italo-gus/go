@@ -1,4 +1,4 @@
-package main // Definição do pacote
+package maingotdd // Definição do pacote
 
 /* fmt O pacote fmt implementa E/S formatadas com funções análogas a printf e scanf do C. Os 'verbos' de formato são derivados do C, mas são mais simples.
 https://pkg.go.dev/fmt@go1.23.3
