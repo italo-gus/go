@@ -11,15 +11,25 @@ import (
 )
 
 /*
-	Função para realizar o teste de ser formado por Test adicionado o nome da função a ser testada
-
+Função para realizar o teste de ser formado por Test adicionado o nome da função a ser testada
 necessitando do parâmetro t *testing.T
 */
 func TestHello(t *testing.T) {
 	got := Hello()         // variáve que recebe o retorno do resultdo da função a ser testada
-	want := "Hello, world" // variáve que armazena o valor esperado de retorno para comparação do teste
+	want := "Hello, World" // variáve que armazena o valor esperado de retorno para comparação do teste
 
 	if got != want { // verifica se há diferença entre as variáveis o resultado da função e o esperado
-		t.Errorf("got %q want %q", got, want) //
+		t.Errorf("got %q want %q", got, want)
+		/* Método Errorf de  t , que imprimirá uma mensagem no caso de falha no teste.
+		O f significa format, o que nos permite construir uma string com valores inseridos nos valores do placeholder %q. */
 	}
+
+	/* no terminal go test
+		** alterado para gerar falha
+		--- FAIL: TestHello (0.00s)
+	    	hello_test.go:22: got "Hello, world" want "Hello, World"
+		FAIL
+		exit status 1
+		FAIL    learn-go-with-tests/helloworld_03 */
+
 }
