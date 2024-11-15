@@ -27,10 +27,15 @@ func TestHello(t *testing.T) {
 		assertCorrectMessage(t, got, want)
 	})
 }
+
+/*
+Para funções auxiliares, é uma boa ideia aceitar uma testing.TB
+que é uma interface que *testing.Te *testing.B
+ambas satisfazem, para que você possa chamar funções auxiliares de um teste ou de um benchmark
+*/
 func assertCorrectMessage(t testing.TB, got, want string) {
 	t.Helper()
-	/*
-		Helper marca a função de chamada como uma função de teste auxiliar.
+	/*	Helper marca a função de chamada como uma função de teste auxiliar.
 		Ao imprimir informações de arquivo e linha, essa função será ignorada.
 		Helper pode ser chamado simultaneamente de várias goroutines.
 		https://pkg.go.dev/testing#T.Helper
