@@ -6,6 +6,7 @@ import (
 
 /* Declaração de variável
 https://go.dev/ref/spec#Variables
+https://go.dev/ref/spec#Variable_declarations
 
 Sintaxe
 var nome tipo = valor (especificando tipo e valor)

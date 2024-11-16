@@ -1,4 +1,4 @@
-package main // // TDD com subtestes go test -v para expor relatório dos testes
+package main // TDD com subtestes go test -v para expor relatório dos testes
 
 import "fmt"
 
