@@ -61,6 +61,10 @@ Um nome de variável não pode conter espaços
 Um nome de variável não pode começar com um dígito .
 O nome da variável não pode ser nenhuma palavra-chave Go
 
+Constantes
+É variáveis que tem um valor fixo que não pode ser alterado, é imutável e somente leitura. usar palavra-chave a const
+const nome tipo = valor (especificando tipo e valor)
+
 Boas práticas
 Camel case
 	Deve começar com a primeira letra minúscula e  subsequente
@@ -106,6 +110,8 @@ var (
 	o string = "hello"
 )
 
+const pi = 3.14 //  declara constante PI π
+
 func main() {
 	b = 1 // atribui o valor 1 a variável "a"
 	c := true
@@ -132,5 +138,8 @@ func main() {
 	fmt.Println("m ", m)
 	fmt.Println("n ", n)
 	fmt.Println("o ", o)
-
+	fmt.Println("π ", pi)
+	// pi = 1111
+	/* erro gerado por tentar alterar uma contante
+	cannot assign to pi (neither addressable nor a map index expression)*/
 }
