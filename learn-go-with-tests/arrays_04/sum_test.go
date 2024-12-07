@@ -66,7 +66,9 @@ func TestSumAll(t *testing.T) {
 			t.Errorf("expected '%v' but the received was '%v' given, '%v'", expected, received, numbers)
 		}
 	})
+}
 
+func TestSumAllTails(t *testing.T) {
 	t.Run("faz as somas de alguns slices", func(t *testing.T) {
 		received := SumAllTails([]int{1, 2}, []int{0, 9})
 		expected := []int{3, 9}
@@ -95,6 +97,4 @@ https://pkg.go.dev/reflect#DeepEqual
 Comparação entre slice
 Equal relata se duas fatias são iguais: o mesmo comprimento e todos os elementos iguais.
 https://pkg.go.dev/slices#Equal
-
-
 */
