@@ -5,11 +5,11 @@ import "testing"
 func TestSum(t *testing.T) {
 	numbers := [5]int{1, 2, 3, 4, 5}
 
-	repeated := Sum(numbers)
+	received := Sum(numbers)
 	expected := 15
 
-	if repeated != expected {
-		t.Errorf("expected '%d' but repeated '%d' given, '%v'", expected, repeated, numbers)
+	if received != expected {
+		t.Errorf("expected '%d' but received '%d' given, '%v'", expected, received, numbers)
 	}
 
 }

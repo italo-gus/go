@@ -11,11 +11,11 @@ func TestSum(t *testing.T) {
 		https://go.dev/doc/effective_go#arrays
 		https://go.dev/ref/spec#Array_types
 	*/
-	repeated := Sum(numbers)
+	received := Sum(numbers)
 	expected := 15
 
-	if repeated != expected {
-		t.Errorf("expected '%d' but repeated '%d' given, '%v'", expected, repeated, numbers)
+	if received != expected {
+		t.Errorf("expected '%d' but received '%d' given, '%v'", expected, received, numbers)
 	}
 	/* %q imprimir strings, %d imprimir inteiro, %v imprimir o valor em um formato padrão.
 	Formatação de erros https://pkg.go.dev/fmt#hdr-Printing	*/
