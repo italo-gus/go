@@ -37,6 +37,13 @@ func Area(width, height float64) float64 {
 }
 */
 
+/*
+	É uma convenção em Go que a variável receptora seja a primeira letra do tipo.
+	https://go.dev/ref/spec#Identifiers
+	https://google.github.io/styleguide/go/decisions#receiver-names
+	https://google.github.io/styleguide/go/decisions.html#single-letter-variable-names
+*/
+
 func (r Rectangle) Perimeter() float64 {
 	return 2 * (r.Width + r.Height)
 }

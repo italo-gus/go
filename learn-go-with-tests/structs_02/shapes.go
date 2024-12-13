@@ -16,11 +16,12 @@ func Area(width, height float64) float64 {
 }
 */
 
-/* Declarações de métodos
-func (nome_do_receptor tipo_do_receptor) Nome_do_método(parâmetros) tipo_do_retorno { bloco_do_método }
-https://go.dev/ref/spec#Method_declarations
-https://go.dev/doc/effective_go#interface_methods
-*/
+// Declarações de métodos
+// func (nome_do_receptor tipo_do_receptor) Nome_do_método(parâmetros) tipo_do_retorno { bloco_do_método }
+// https://go.dev/ref/spec#Method_declarations
+// https://go.dev/doc/effective_go#interface_methods
+// https://go.dev/ref/spec#Method_values
+// https://gobyexample.com/methods
 
 func (rectangle Rectangle) Perimeter() float64 {
 	return 2 * (rectangle.Width + rectangle.Height)
